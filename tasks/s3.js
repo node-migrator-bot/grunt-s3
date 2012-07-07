@@ -33,7 +33,7 @@ module.exports = function (grunt) {
   const deferred = require('underscore.deferred');
   _.mixin(deferred);
 
-  const existsSync = ('existsSync' in fs) ? fs.existsSync : path.existsSync;
+  const existsSync = ('existsSync' in fs) ? fs.existsSync : fs.existsSync;
 
   /**
    * Grunt aliases.
